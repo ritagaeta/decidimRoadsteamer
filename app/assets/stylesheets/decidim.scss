@@ -45,5 +45,15 @@
 //   --facebook: #{$facebook};
 //   --google: #{$google};
 // }
-
+@import '../fonts/LiberGrotesqueFamily-SemiBold.ttf';
+$primary_color: #d04d9c;
+.title-bar{
+    background: white;
+}
+@font-face {  
+    font-family: 'LiberGrotesqueFamily-bold'; 
+    src: url(asset-path('LiberGrotesqueFamily-SemiBold.ttf')) format('truetype');
+    font-weight: bold;  
+    font-style: normal;  
+ }
 @import "decidim/application";
