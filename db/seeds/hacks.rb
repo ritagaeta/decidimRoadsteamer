@@ -14,7 +14,7 @@ if !Rails.env.production? || ENV["SEED"]
   content_root = File.join(seeds_root, 'content')
 
 	organization = Decidim::Organization.first
-  organization.name = "Hacking Decidim"
+  organization.name = "RoadSteamer"
   organization.description = {
     en: "<p>Learn how to hack and manipulate the default Decidim UI/UX and more advanced tunings.</p>"
   }
