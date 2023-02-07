@@ -8,7 +8,7 @@ bin/rails decidim:upgrade
 
 echo -e "\e[33mTrying to execute migrations..."
 if bin/rails db:migrate; then
- bin/rails db:seed
+ #bin/rails db:seed //aggiunto per la prima installazione (aveva creato tabelle vuote)
     echo -e "\e[32mDatabase already created. No need for seeding."
 else
     echo -e "\e[31mMigration failed. Installing database"
@@ -19,7 +19,7 @@ else
     bin/rails db:seed
 fi
 echo -e "\e[33mSeeding hacks content..."
-bin/rails db:seed:hacks
+# bin/rails db:seed:hacks
 
 echo
 echo -e "\e[32mGreat! Please use this user/password to login:"
