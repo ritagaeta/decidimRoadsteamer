@@ -8,6 +8,7 @@ bin/rails decidim:upgrade
 
 echo -e "\e[33mTrying to execute migrations..."
 if bin/rails db:migrate; then
+ bin/rails db:seed
     echo -e "\e[32mDatabase already created. No need for seeding."
 else
     echo -e "\e[31mMigration failed. Installing database"

@@ -4,6 +4,6 @@ if !Rails.env.production? || ENV["SEED"]
   puts "The same action can be achieved (or reverted) by accessing http://hostame/system"
 
   organization = Decidim::Organization.first
-  organization.host = "localhost"
+  organization.host = "192.168.1.77"
   organization.save!
 end
